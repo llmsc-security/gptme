@@ -1,76 +1,16 @@
-# Environment files
-.env*
-.clean
-gptme.toml
+# Ignore everything by default
+*
 
-venv
-.venv
-
-# worktrees
-dev
-
-# Logs
-*.log
-*logs*
-
-# Outputs
-build
-outputs
-screenshot_*
-
-# Build scripts
-scripts
-!scripts/computer_home
-.github
-
-# Build/test/coverage/docs/prof directories
-dist
-tests
-tests/output
-junit.xml
-.coverage
-coverage.xml
-htmlcov
-prof
-
-# cache
-__pycache__
-.*cache
-
-# docs/demos/projects/evals
-docs
-demos
-projects
-eval_results*
-
-# Specific filetypes
-*.csv
-*.jsonl
-*.gif
-*.cast
-*.png
-
-# Docker-specific excludes
-Dockerfile
-Dockerfile.eval
-docker-compose.yml
-
-# Git directory
-.git
-
-# Python bytecode
-*.pyc
-*.pyo
-*.pyd
-
-# Editor directories
-.vscode
-.idea
-
-# Keep these files/directories
+# Only include what we need
 !pyproject.toml
 !poetry.lock
 !README.md
-!gptme
-!static
-!media
+!gptme/
+!static/
+!media/
+
+# Ignore files within included directories
+gptme/__pycache__/
+gptme/*.pyc
+gptme/*.pyo
+gptme/*.pyd
